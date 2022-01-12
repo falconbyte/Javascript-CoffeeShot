@@ -1,12 +1,31 @@
 <!DOCTYPE html><html><head></head><body>
 
-    <script>
-  
-  for(var i = 0; i < 4; i++){
-      document.write(i); // 0 1 2 3
-  }
-  
-    </script>
-  
-  </body></html>
+<script>
+
+    // for-Schleife
+    for(var i = 0; i < 4; i++){
+        document.write(i); // 0 1 2 3
+    }
+
+    // while-Schleife
+    var i = 0;
+    while(i < 4){
+        i += Math.random(); // Liefere Pseudozufallszahl
+        document.write(i + "<br>");
+    }
+
+    // do-while-Schleife
+    var meinezahl = 4;
+    var zufallszahl;
+
+    do{
+        zufallszahl = Math.random() * 6 + 1;    // Zufallszahl zwischen 1-6
+        zufallszahl = Math.floor(zufallszahl);  // Auf Ganzzahl runden
+        document.write(zufallszahl + " ");
+    }
+    while(meinezahl != zufallszahl);
+
+</script>
+
+</body></html>
   
