@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head></head><body>
+
+    <script>
+    
+        // alert-Fenster
+        alert("Meine Devise ist surprise wie jeder weiss!");    
+    
+        // confirm-Fenster
+        var antwort = confirm("Möchten Sie die Bestellung ausführen?");
+        if(antwort == true){
+            document.write("positiv");
+        }    
+        else{
+            document.write("negativ");
+        }
+
+        // Prompt (Eingabefenster) für Text
+        var name = prompt("Bitte geben Sie Ihren Namen ein.", "Michael Jackson");
+        document.write(usertext);
+
+        // Prompt für Zahlen
+        var zahl1 = parseFloat(prompt("Erste Zahl")); 
+        var zahl2 = parseFloat(prompt("Erste Zahl")); 
+        var summe = zahl1 + zahl2; 
+        document.write("Die Summe lautet: " + summe); 
+        
+
+    </script>
+    
+    </body></html>
+      
+    
