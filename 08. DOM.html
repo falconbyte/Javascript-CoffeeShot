@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+
+// Rufe beim Klick auf den Button die Funktion "tuwas()" auf:
+<button onclick="tuwas()">Click me</button>
+
+<div id="inhalt" style="border: 1px solid red;">
+
+</div>
+
+
+<script>
+
+function tuwas(){
+// HTML-Objekt (den DIV) in Variable speichern
+var div_element = document.getElementById("typ1");
+
+// Paragraph-Knoten erstellen
+var nodeP = document.createElement("p");
+
+// Text-Knoten erstellen
+var text = document.createTextNode("Hallo, ich wurde durch JS generiert");
+
+// Textknoten als Kind dem P-Knoten hinzufügen
+nodeP.appendChild(text);
+
+// P-Knoten dem DIV-Knoten als Kind hinzufügen
+div_element.appendChild(nodeP);
+}
+  
+</script>
+
+
+</body>
+</html>
