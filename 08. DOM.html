@@ -1,37 +1,25 @@
 <html>
-<head>
-</head>
-<body>
 
-// Rufe beim Klick auf den Button die Funktion "tuwas()" auf:
-<button onclick="tuwas()">Click me</button>
 
-<div id="inhalt" style="border: 1px solid red;">
-
+<div id="container" style="border: 1px solid red">
+    // Klick auf Button löst Funktion clickMe() aus
+    <button onclick="clickMe()">Klick mich</button> 
 </div>
+
 
 
 <script>
 
-function tuwas(){
-// HTML-Objekt (den DIV) in Variable speichern
-var div_element = document.getElementById("typ1");
+function clickMe(){
 
-// Paragraph-Knoten erstellen
-var nodeP = document.createElement("p");
+    var node = document.createElement("strong");
+    var node2 = document.createTextNode("Hallo Welt"); node.appendChild(node2);
+    document.getElementById("container").appendChild(node); }
 
-// Text-Knoten erstellen
-var text = document.createTextNode("Hallo, ich wurde durch JS generiert");
-
-// Textknoten als Kind dem P-Knoten hinzufügen
-nodeP.appendChild(text);
-
-// P-Knoten dem DIV-Knoten als Kind hinzufügen
-div_element.appendChild(nodeP);
-}
-  
 </script>
+    
 
 
-</body>
+
+
 </html>
